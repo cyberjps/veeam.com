@@ -31,9 +31,8 @@ void CCalcBlockHash::Calc()
 }
 
 // Wait result calculation. Method must be called outside the class at least one time
-// TODO check joinable
 // Convert uint to string
-// TODO: add paramarwes for conversion to other formats
+// TODO: add parameters for conversion to other formats
 string CCalcBlockHash::GetResult()
 {
 	if(m_thWorkThread->joinable()) m_thWorkThread->join();

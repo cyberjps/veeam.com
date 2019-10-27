@@ -48,7 +48,7 @@ int main(int ac, char* av[])
 				return EXIT_SUCCESS;
 			}
 			else if (!vm.count("input") || !vm.count("output")) {
-				cout << "Wrong paramaters!" << endl << endl
+				cout << "Wrong parameters!" << endl << endl
 					<< "Command Line Parameters" << endl
 					<< desc << endl;
 				return EXIT_FAILURE;
@@ -97,7 +97,7 @@ int main(int ac, char* av[])
 						nPos += nBlockSize;
 					}
 				}
-				// TODO: Separate proces to independed thread. This is "bottleneck" now
+				// TODO: Separate process to independed thread. This is "bottleneck" now
 				while (!qPrQueue.empty()) {
 					CCalcBlockHash* pNextBlock = qPrQueue.front(); // Get first element from top of queue (FIFO)
 					string hash = pNextBlock->GetResult(); // Get result from this block (wait thread if needed)
