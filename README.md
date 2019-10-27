@@ -12,3 +12,6 @@ The project has many places for optimization and now has only an educational goa
 Not for the production version!
 
 Project using the BOOST library, threads and memory mapped files.
+Bosst library installed to default dirrectory under Windows
+(C:\local\boost_1_71_0 both x64 and x86 version).
+Project configured for this path.
